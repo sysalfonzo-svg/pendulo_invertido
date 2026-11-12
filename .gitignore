@@ -1,0 +1,33 @@
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Compilados y binarios
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+
+# MATLAB / Simulink
+*.asv
+*.m~
+*.slxc
+slprj/
+*.autosave
+
+# Sistema Operativo
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store

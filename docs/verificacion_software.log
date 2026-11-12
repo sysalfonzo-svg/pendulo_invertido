@@ -1,0 +1,90 @@
+PASS: exact recovered baseline hash, estimator, encoders, I2C, USB and CSV preserved.
+Processing genericSTM32F401RC (platform: ststm32@19.4.0; board: genericSTM32F401RC; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/genericSTM32F401RC.html
+PLATFORM: ST STM32 (19.4.0) > STM32F401RC (64k RAM. 256k Flash)
+HARDWARE: STM32F401RCT6 84MHz, 64KB RAM, 256KB Flash
+DEBUG: Current (blackmagic) External (blackmagic, jlink, stlink)
+PACKAGES: 
+ - framework-arduinoststm32 @ 4.21100.0 (2.11.0) 
+ - framework-cmsis @ 2.50900.0 (5.9.0) 
+ - toolchain-gccarmnoneeabi @ 1.120301.0 (12.3.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 14 compatible libraries
+Scanning dependencies...
+No dependencies
+Building in release mode
+Checking size .pio\build\genericSTM32F401RC\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  15.3% (used 10020 bytes from 65536 bytes)
+Flash: [==        ]  21.9% (used 57372 bytes from 262144 bytes)
+========================= [SUCCESS] Took 2.73 seconds =========================
+
+Processing solo_medicion (platform: ststm32@19.4.0; board: genericSTM32F401RC; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/genericSTM32F401RC.html
+PLATFORM: ST STM32 (19.4.0) > STM32F401RC (64k RAM. 256k Flash)
+HARDWARE: STM32F401RCT6 84MHz, 64KB RAM, 256KB Flash
+DEBUG: Current (blackmagic) External (blackmagic, jlink, stlink)
+PACKAGES: 
+ - framework-arduinoststm32 @ 4.21100.0 (2.11.0) 
+ - framework-cmsis @ 2.50900.0 (5.9.0) 
+ - toolchain-gccarmnoneeabi @ 1.120301.0 (12.3.1)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 14 compatible libraries
+Scanning dependencies...
+No dependencies
+Building in release mode
+Checking size .pio\build\solo_medicion\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  15.3% (used 10020 bytes from 65536 bytes)
+Flash: [==        ]  21.7% (used 56836 bytes from 262144 bytes)
+========================= [SUCCESS] Took 2.82 seconds =========================
+
+Environment         Status    Duration
+------------------  --------  ------------
+genericSTM32F401RC  SUCCESS   00:00:02.733
+solo_medicion       SUCCESS   00:00:02.816
+========================= 2 succeeded in 00:00:05.549 =========================
+PASS: 16777216 raw angle pairs, both signs; 100042 counter rollover cases; wheel mapping; variable-dt filters.
+PASS motor_safety: startup, bounds, no overlap, deadlines, cooldown, sticky faults, explicit lease, stale health, rollover.
+PASS command_parse: all 256 bytes, embedded NUL, signed bounds, 32-bit overflow fraud, whitespace, extra fields, decimal junk and policy rejection.
+prueba_estados: parser, rollover, perdidas, flags, NaN y PWM correctos.
+prueba_protocolo_manual: comandos y parser aprobados, sin abrir puertos.
+PASS analisis de pulsos, rollover y CSV/MAT
+
+MODELO PRELIMINAR: FUERZA IDEAL, NO PWM
+Jp estimada = 0.00253432 kg*m^2
+A =
+         0    1.0000         0         0
+         0         0   -0.2374         0
+         0         0         0    1.0000
+         0         0   28.6815         0
+
+B =
+         0
+    1.1720
+         0
+   -3.3456
+
+K_F = [N/m, N/(m/s), N/rad, N/(rad/s)]
+   -9.5807   -8.6587  -44.0194   -8.0417
+
+Polos discretos del modelo nominal =
+   0.9896 + 0.0072i
+   0.9896 - 0.0072i
+   0.9680 + 0.0143i
+   0.9680 - 0.0143i
+
+Fuerza maxima solicitada en este ejemplo: 2.3049 N
+Faltan accionamiento real, saturacion, retardos y estimador.
+
+Exportado modelo de FUERZA IDEAL; no es un controlador PWM.
+SHA256 fuente: 1d03253a3c87b435e75649c1d71c77787b2dd4c8d50c6fb36f4a48a10c46b18b
+MAT: D:\INFO PC\Downloads\Prueba_L298N_AS5600_F401RC_VSCode\modelos\modelo_fuerza.mat
+Header: D:\INFO PC\Downloads\Prueba_L298N_AS5600_F401RC_VSCode\include\lqr_force_model.h
+Verificacion de software terminada. No se abrio COM ni se cargaron/activaron motores.

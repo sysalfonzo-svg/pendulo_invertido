@@ -1,0 +1,6 @@
+{
+  "src/main.cpp": "ab98b68a8bb79a341342a86ce95d8ae8537222ae66180488a84ad605227a364d",
+  "include/state_math.h": "351fdec65a45a51eb69e8989f82e0bbc67061320dc101b607f4250688ec0c3d1",
+  "platformio.ini": "5085520ed92f4f0df4bfa7ad53db16fc20962f5c68f0a1411673a338b9b20d29",
+  ".pio/build/genericSTM32F401RC/firmware.bin": "2501dec098e02cc1baec9bac686f6d76e56219cc4cb290e4a2e1de5c255b9f7d"
+}
